@@ -1,0 +1,9 @@
+In this project, my workflow is as follow:
+1. Write force function and calculate the acceleration, test with gravity.
+2. write sphere/sphere collision, sphere/plane collision and sphere/triangle collision test.
+3. write torque function, and test with rotation scene.
+4. write spring function
+5. integrate rk4 in the integrator, and replace the old step funtion.
+
+I wrote a RK4Object class for storing RK4 data for position, rotation and velocity. Also on the sphere/triangle
+test part, I used old raytracing method to detect that.

@@ -1,0 +1,30 @@
+In this project, I finished all the required tasks without any extra credit. 
+
+
+
+The program flow is as follow
+:
+1. based on screen pixel and look position send out a ray the detect any intersection with objects.
+
+2. If hit the object, return the HitRecord instance and do 3 time recursive reflection.
+
+3. the reflection send out a same type of ray to the reflective direction and then add up the color to original pixel.
+
+4. If the original ray doesn't hit any object then return the background color.
+
+5. Also, when casting the ray, the hit also get the refractive index of material, based on that, the program decide to calculate the refractive. 
+
+
+
+The procedure I wrote the program as follow:
+1. write the Hit function for sphere, triangle and model. The hit function used to detect the intersection of object, also set the hitRecord data for the hit.
+
+2. write the rayCast function from camera to the certain pixel on screen.
+
+3. write color calculation based on the hitRecord.
+
+4. write the reflection by doing the recursive of the raycast function.
+
+5. do the shadow detection.
+6. write the refraction code if the material's refraction index is not 0;
+
